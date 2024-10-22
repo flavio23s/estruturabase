@@ -180,3 +180,10 @@ button {
   .footer-copyright a {
     color: #fff;
   }
+
+  /* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .home-img img {
+        display: none;
+    }
+}
