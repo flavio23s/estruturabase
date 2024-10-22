@@ -26,6 +26,11 @@ html {
 .home-description h1 {
     font-size: 2.3rem;
     color: #fff;
+    text-shadow: 
+    1px 1px 0px black, /* sombra à direita e abaixo */
+    -1px -1px 0px black, /* sombra à esquerda e acima */
+    -1px 1px 0px black, /* sombra à esquerda e abaixo */
+    1px -1px 0px black; /* sombra à direita e acima */
 }
 
 .home-description p {
@@ -190,7 +195,7 @@ button {
     }
 
     .home-description {
-        padding-top: 250px;
+        padding-top: 280px;
     }
 
     .home-description h1 {
