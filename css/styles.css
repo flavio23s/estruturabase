@@ -1,0 +1,182 @@
+/* Estilos globais */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  height: 100%; /* Garante que o body e o html ocupem 100% da altura */
+  width: 100%; /* Garante que o body e o html ocupem 100% da largura */
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+  background: url("../img/damafundo.webp") no-repeat center center/cover;
+}
+
+.home-conteiner {
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: space-between; /* Ajusta o espaçamento entre os itens */
+    align-items: center; /* Ajusta o espaçamento vertical */
+    text-align: center;
+}
+
+.home-description {
+    margin: 0 40px;
+    width: 80%;
+}
+
+.home-description h1 {
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.home-description p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.home-img img{
+    max-width: 100%; /* Aumenta o tamanho da imagem para 150% do seu tamanho padrão */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+ /*segunga section*/
+
+.Depoimentos-conteiner {
+    display: inline; /* Coloca os itens lado a lado */
+    justify-content: space-between; /* Ajusta o espaçamento entre os itens */
+    align-items: center; /* Ajusta o espaçamento vertical */
+    text-align: center;
+}
+
+.Depoimentos-description {
+    margin: 0 40px;
+}
+
+.Depoimentos-description h2 {
+    font-size: 2.0rem;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.Depoimentos-description p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    padding: 20px;
+    gap: 3%;
+  }
+
+  
+.carousel-item {
+    min-width: 18%; /* 4 imagens visíveis ao mesmo tempo */
+    padding: 2px;
+
+  }
+ 
+.carousel-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Efeito suave de transição para a rolagem */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100%));
+    }
+  }
+  /* Estilo geral para o carrossel */
+.carousel-track {
+    animation: scroll 30s linear infinite; /* Velocidade ajustável */
+  }
+
+  /* Estilos para os botões */
+button {
+    background-color: #25e046;
+    border: 2px solid transparent; /* Borda inicial invisível */
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 2; /* Para que o texto fique acima do efeito de brilho */
+  }
+  
+  /* Efeito de brilho nas bordas */
+  button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #25e046, #ffffff, #25e046, #ffffff);
+    background-size: 400%;
+    z-index: 0;
+    border-radius: 7px; /* Levemente maior que o botão para efeito de borda */
+    animation: border-glow 2s linear infinite;
+    opacity: 0.6;
+  }
+  
+  /* Efeito de brilho no texto */
+  button:hover a {
+    text-shadow: 0 0 8px rgba(37, 224, 70, 0.8), 0 0 12px rgba(37, 224, 70, 0.6);
+  }
+  
+  /* Animação de brilho nas bordas */
+  @keyframes border-glow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Efeito de brilho no fundo ao passar o mouse */
+  button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.8),
+      inset 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Para garantir o contraste com o efeito de brilho */
+  button a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-copyright {
+    background-color: #740000;
+    color: #fff;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-copyright a {
+    color: #fff;
+  }
