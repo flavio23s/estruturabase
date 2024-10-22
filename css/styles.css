@@ -186,4 +186,17 @@ button {
     .home-img img {
         display: none;
     }
+
+    .home-description {
+        padding-top: 250px;
+    }
+
+    .home-description h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-description p {
+        font-size: large;
+    }
+
 }
