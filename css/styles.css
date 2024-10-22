@@ -214,6 +214,10 @@ button {
         gap: 70%;
       }
 
+    .Depoimentos-conteiner {
+        padding-bottom: 20px;
+    }
+
     .Depoimentos-description h2 {
         font-size: 1.4rem;
     }
