@@ -206,13 +206,15 @@ button {
         font-size: large;
         padding-bottom: 20px;
     }
+
     .carousel-track {
         display: flex;
         transition: transform 0.5s ease-in-out;
         will-change: transform;
         padding: 20px;
         gap: 70%;
-      }
+        cursor: grab; /* Adiciona o cursor de mão para arrastar */
+    }
 
     .Depoimentos-conteiner {
         padding-bottom: 20px;
